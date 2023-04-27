@@ -1,6 +1,6 @@
 # flutter_aog
 
-A new Flutter project.
+A new Flutter project to Mobile System.
 
 ## Getting Started
 
