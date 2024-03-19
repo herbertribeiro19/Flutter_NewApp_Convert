@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_aog/widgets/logo.widgets.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
-
 import 'package:flutter_aog/widgets/input.widget.dart';
 
 void main() {
