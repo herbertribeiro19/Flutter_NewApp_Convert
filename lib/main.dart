@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_aog/widgets/input.widget.dart';
 import 'package:flutter_aog/widgets/logo.widgets.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
-import 'package:flutter_aog/widgets/input.widget.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,8 +28,8 @@ class MyApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   HomePage({super.key});
 
-  var _gasCtrl = new MoneyMaskedTextController();
-  var _alcoolCtrl = new MoneyMaskedTextController();
+  final _gasCtrl = MoneyMaskedTextController();
+  final _alcoolCtrl = MoneyMaskedTextController();
 
   @override
   Widget build(BuildContext context) {
@@ -37,14 +37,14 @@ class HomePage extends StatelessWidget {
       backgroundColor: Theme.of(context).primaryColor,
       body: ListView(
         children: <Widget>[
-          Logo(),
+          const Logo(),
           Container(
-            margin: EdgeInsets.all(16),
+            margin: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.deepOrange,
               borderRadius: BorderRadius.circular(20),
             ),
-            child: Column(
+            child: const Column(
               children: <Widget>[
                 SizedBox(
                   height: 2,
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
             label: "Real",
           ),
           Container(
-            margin: EdgeInsets.all(50),
+            margin: const EdgeInsets.all(50),
             height: 50,
             decoration: BoxDecoration(
               color: Colors.deepOrange,
@@ -79,8 +79,8 @@ class HomePage extends StatelessWidget {
               ),
             ),
             child: FloatingActionButton(
-              backgroundColor: Color.fromARGB(0, 0, 0, 0),
-              child: Text(
+              backgroundColor: const Color.fromARGB(0, 0, 0, 0),
+              child: const Text(
                 "Calcular",
                 style: TextStyle(
                   color: Colors.white,

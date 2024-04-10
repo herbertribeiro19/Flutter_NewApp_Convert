@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text2/flutter_masked_text2.dart';
 
+// ignore: must_be_immutable
 class Input extends StatelessWidget {
   var label = "";
-  var ctrl = new MoneyMaskedTextController();
+  var ctrl = MoneyMaskedTextController();
 
   Input({
+    super.key,
     required this.label,
     required this.ctrl,
   });
@@ -14,7 +16,7 @@ class Input extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        SizedBox(
+        const SizedBox(
           width: 70,
         ),
         Container(
@@ -22,7 +24,7 @@ class Input extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             label,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 44,
               fontWeight: FontWeight.w500,
@@ -30,19 +32,19 @@ class Input extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(
+        const SizedBox(
           width: 70,
         ),
         Expanded(
           child: TextFormField(
             controller: ctrl,
             keyboardType: TextInputType.number,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 40,
               fontFamily: "Big Shoulders Display",
             ),
-            decoration: InputDecoration(
+            decoration: const InputDecoration(
               border: InputBorder.none,
             ),
           ),
